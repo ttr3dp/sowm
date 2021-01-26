@@ -23,6 +23,16 @@ static struct key keys[] = {
     {MOD,           XK_c,   win_center, {0}},
     {MOD,           XK_f,   win_fs,     {0}},
 
+    {MOD,           XK_k,  win_move,  {.com = (const char*[]){"move",   "n"}, .i = 45}},
+    {MOD,           XK_j,  win_move,  {.com = (const char*[]){"move",   "s"}, .i = 45}},
+    {MOD,           XK_l,  win_move,  {.com = (const char*[]){"move",   "e"}, .i = 80}},
+    {MOD,           XK_h,  win_move,  {.com = (const char*[]){"move",   "w"}, .i = 80}},
+
+    {MOD|ShiftMask, XK_k,  win_move,  {.com = (const char*[]){"resize", "n"}, .i = 45}},
+    {MOD|ShiftMask, XK_j,  win_move,  {.com = (const char*[]){"resize", "s"}, .i = 45}},
+    {MOD|ShiftMask, XK_l,  win_move,  {.com = (const char*[]){"resize", "e"}, .i = 80}},
+    {MOD|ShiftMask, XK_h,  win_move,  {.com = (const char*[]){"resize", "w"}, .i = 80}},
+
     {Mod1Mask,           XK_Tab, win_next,   {0}},
     {Mod1Mask|ShiftMask, XK_Tab, win_prev,   {0}},
 
