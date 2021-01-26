@@ -81,8 +81,6 @@ void notify_destroy(XEvent *e) {
 void notify_enter(XEvent *e) {
     while(XCheckTypedEvent(d, EnterNotify, e));
     while(XCheckTypedWindowEvent(d, mouse.subwindow, MotionNotify, e));
-
-    for win if (c->w == e->xcrossing.window) win_focus(c);
 }
 
 void notify_motion(XEvent *e) {
@@ -111,6 +109,10 @@ void key_press(XEvent *e) {
 
 void button_press(XEvent *e) {
     if (!e->xbutton.subwindow) return;
+
+    if (e->xbutton.button == 1) {
+        for win if (c->w == e->xbutton.subwindow) win_focus(c);
+    }
 
     win_size(e->xbutton.subwindow, &wx, &wy, &ww, &wh);
     XRaiseWindow(d, e->xbutton.subwindow);
