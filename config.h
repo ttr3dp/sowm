@@ -26,12 +26,12 @@ static struct key keys[] = {
     {Mod1Mask,           XK_Tab, win_next,   {0}},
     {Mod1Mask|ShiftMask, XK_Tab, win_prev,   {0}},
 
-    {MOD,             XK_d,      run, {.com = menu}},
-    {MOD,             XK_Return, run, {.com = term}},
-    {MOD,             XK_F12,    run, {.com = calc}},
-    {MOD|ShiftMask,   XK_x,      run, {.com = scrlock}},
-    {MOD,             XK_grave,  run, {.com = emoji}},
-    {MOD|ControlMask, XK_p,      run, {.com = passwds}},
+    {MOD,             XK_d,         run, {.com = menu}},
+    {MOD,             XK_Return,    run, {.com = term}},
+    {MOD,             XK_F12,       run, {.com = calc}},
+    {MOD|ShiftMask,   XK_x,         run, {.com = scrlock}},
+    {MOD,             XK_grave,     run, {.com = emoji}},
+    {MOD|ControlMask, XK_p,         run, {.com = passwds}},
 
     {0, XK_Print,                   run, {.com = scrot}},
     {0, XF86XK_AudioRaiseVolume,    run, {.com = volup}},
