@@ -2,7 +2,8 @@
 #define CONFIG_H
 
 #define MOD Mod4Mask
-#define BORDER_COLOR "#6D9E3F"
+#define BORDER_COLOR_ACTIVE "#3BA275"
+#define BORDER_COLOR_INACTIVE "#000000"
 #define BORDER_WIDTH 3
 
 #define TERM "st"
