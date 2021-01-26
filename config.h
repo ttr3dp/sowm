@@ -2,6 +2,8 @@
 #define CONFIG_H
 
 #define MOD Mod4Mask
+#define BORDER_COLOR "#6D9E3F"
+#define BORDER_WIDTH 3
 
 #define TERM "st"
 const char* menu[]      = {"dmrun", 0};
