@@ -19,6 +19,6 @@ uninstall:
 	rm -f $(DESTDIR)$(BINDIR)/sowm
 
 clean:
-	rm -f sowm *.o
+	rm -f sowm *.o *.orig *.rej
 
 .PHONY: all install uninstall clean
